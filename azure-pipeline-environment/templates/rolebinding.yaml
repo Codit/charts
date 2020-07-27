@@ -1,7 +1,6 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: azure-devops-admin-on-platform-gateway-g3-tst
   name: {{ include "azure-pipeline-environment.roleBinding" . }}
   labels:
     {{- include "azure-pipeline-environment.labels" . | nindent 4 }}
