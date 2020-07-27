@@ -19,3 +19,6 @@ steps:
 
 - script: helm lint ./azure-pipeline-environment/
   displayName: 'Lint Helm chart'
+
+- script: helm install ./azure-pipeline-environment/ --generate-name --dry-run
+  displayName: 'Dry-run installation of Helm chart'
