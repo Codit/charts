@@ -1,0 +1,29 @@
+trigger:
+- master
+pr:
+ branches:
+   include:
+     - master
+ paths:
+   include:
+     - azure-pipeline-environment/*
+
+pool:
+  vmImage: 'ubuntu-latest'
+steps:
+- task: HelmInstaller@1
+  displayName: 'Install Helm'
+  inputs:
+    helmVersionToInstall: 'latest'
+
+- script: helm lint ./azure-pipeline-environment/
+  displayName: 'Lint Helm chart'
+
+- script: helm template ./azure-pipeline-environment/
+  displayName: 'Template Resources from Helm'
+
+- script: kind create cluster --name ci
+  displayName: Start Kind cluster
+
+- script: helm install ./azure-pipeline-environment/ --generate-name
+  displayName: 'Install Helm chart on Kind cluster'
