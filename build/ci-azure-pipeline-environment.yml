@@ -10,20 +10,20 @@ pr:
 
 pool:
   vmImage: 'ubuntu-latest'
-  # vmImage: 'windows-latest'
-
 steps:
-# - script: choco install kind
-- script: kind create cluster --name ci
-
 - task: HelmInstaller@1
   displayName: 'Install Helm'
   inputs:
     helmVersionToInstall: 'latest'
 
 - script: helm lint ./azure-pipeline-environment/
-# - script: helm lint .\azure-pipeline-environment\
   displayName: 'Lint Helm chart'
 
+- script: kind create cluster --name ci
+  displayName: Start Kind cluster
+
 - script: helm install ./azure-pipeline-environment/ --generate-name --dry-run
-  displayName: 'Dry-run installation of Helm chart'
+  displayName: 'Dry-run Install of Helm chart on Kind cluster'
+
+- script: helm install ./azure-pipeline-environment/ --generate-name
+  displayName: 'Dry-run Install of Helm chart on Kind cluster'
