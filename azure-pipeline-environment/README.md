@@ -18,7 +18,7 @@ helm install coditeu/azure-pipeline-environment
 To install the chart with the release name `azure-pipeline-environment`:
 
 ```console
-$ helm install --name azure-pipeline-environment coditeu/azure-pipeline-environment
+$ helm install azure-pipeline-environment coditeu/azure-pipeline-environment
 ```
 
 ## Uninstalling the Chart
