@@ -17,5 +17,5 @@ steps:
   inputs:
     helmVersionToInstall: 'latest'
 
-- script: helm lint .\azure-pipeline-environment\
+- script: helm lint ./azure-pipeline-environment/
   displayName: 'Lint Helm chart'
