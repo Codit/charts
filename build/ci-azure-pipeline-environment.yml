@@ -19,11 +19,11 @@ steps:
 - script: helm lint ./azure-pipeline-environment/
   displayName: 'Lint Helm chart'
 
+- script: helm template ./azure-pipeline-environment/
+  displayName: 'Template Resources from Helm'
+
 - script: kind create cluster --name ci
   displayName: Start Kind cluster
 
-- script: helm install ./azure-pipeline-environment/ --generate-name --dry-run
-  displayName: 'Dry-run Install of Helm chart on Kind cluster'
-
 - script: helm install ./azure-pipeline-environment/ --generate-name
-  displayName: 'Dry-run Install of Helm chart on Kind cluster'
+  displayName: 'Install Helm chart on Kind cluster'
