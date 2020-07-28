@@ -2,14 +2,25 @@ apiVersion: v1
 entries:
   azure-pipeline-environment:
   - apiVersion: v2
-    appVersion: 0.1.0
-    created: "2020-07-27T17:14:13.8667289+02:00"
+    created: "2020-07-28T10:11:06.7395507+02:00"
     description: A Helm chart for creating required resources to use Azure Pipelines'
       Environment
-    digest: b2a43ca23f1fbe5b844051e7d84d438dce72f055e2bf05dbca3ff5a05aad0a48
+    digest: 59edce3477c835f4a0aa192eb702b15cdbbfa3bfdffde5afb35dc305f9b60013
+    icon: https://raw.githubusercontent.com/CoditEU/charts/master/media/logo.png
+    keywords:
+    - Azure DevOps
+    - Azure Pipelines
+    - Kubernetes
+    - Azure
+    maintainers:
+    - email: tom.kerkhove@codit.eu
+      name: Tom Kerkhove
+      url: http://github.com/tomkerkhove
     name: azure-pipeline-environment
+    sources:
+    - https://github.com/CoditEU/charts
     type: application
     urls:
     - https://coditeu.github.io/charts/azure-pipeline-environment-0.1.0-alpha.tgz
     version: 0.1.0-alpha
-generated: "2020-07-27T17:14:13.8657316+02:00"
+generated: "2020-07-28T10:11:06.7385542+02:00"

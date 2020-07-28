@@ -1,3 +1,5 @@
+# Defines the metadata of the Helm chart
+# See https://helm.sh/docs/topics/charts/#the-chartyaml-file for full spec
 apiVersion: v2
 name: azure-pipeline-environment
 description: A Helm chart for creating required resources to use Azure Pipelines' Environment
@@ -17,7 +19,22 @@ type: application
 # Versions are expected to follow Semantic Versioning (https://semver.org/)
 version: 0.1.0-alpha
 
-# This is the version number of the application being deployed. This version number should be
-# incremented each time you make changes to the application. Versions are not expected to
-# follow Semantic Versioning. They should reflect the version the application is using.
-appVersion: 0.1.0
+# A URL to an SVG or PNG image to be used as an icon
+icon: https://raw.githubusercontent.com/CoditEU/charts/master/media/logo.png
+
+# A list of URLs to source code for this project
+sources:
+  - https://github.com/CoditEU/charts
+
+# Collection of maintainers of the Helm chart
+maintainers:
+  - name: Tom Kerkhove
+    email: tom.kerkhove@codit.eu
+    url: http://github.com/tomkerkhove
+
+# Collection of keywords related to the Helm chart
+keywords:
+  - Azure DevOps
+  - Azure Pipelines
+  - Kubernetes
+  - Azure
