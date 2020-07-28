@@ -2,6 +2,11 @@
 
 Thanks for helping make them better!
 
+Here is what we'll cover:
+
+- [Contributing new Helm charts](#contributing-new-helm-charts)
+- [Shipping a new Helm chart version](#shipping-a-new-helm-chart-version)
+
 ## Contributing new Helm charts
 
 It's super easy to add a new Helm chart by running:
