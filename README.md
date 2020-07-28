@@ -3,7 +3,8 @@ Helm chart repo of common apps that we use:
 
 - **Azure Pipeline Environment** - A Helm chart for creating required resources to use Azure Pipelines' Environment
 
-## Browsing our Helm chart repo
+## Getting Started
+### Browsing our Helm chart repo
 
 **Adding our Helm chart repo:**
 ```console
