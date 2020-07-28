@@ -1,27 +1,31 @@
 # Helm Charts
-Helm chart repo of common apps that we use.
+Helm chart repo of common apps that we use:
 
-## Shipping a new Helm chart version
+- **Azure Pipeline Environment** - A Helm chart for creating required resources to use Azure Pipelines' Environment
 
-You can easily release a new Helm chart version:
+## Getting Started
+### Browsing our Helm chart repo
 
-1. Update the version of the Helm chart in `Chart.yaml`
-
-2. Package the Helm chart
-```shell
-$ helm package azure-pipeline-environment
-Successfully packaged chart and saved it to: C:\Code\GitHub\charts-codit\azure-pipeline-environment-0.1.0-alpha.tgz
+**Adding our Helm chart repo:**
+```console
+$ helm repo add coditeu https://coditeu.github.io/charts
+"coditeu" has been added to your repositories
 ```
 
-3. Move the new chart to the `docs` folder
-```shell
-$ mv azure-pipeline-environment-*.tgz docs
+**Browse all our Helm charts:**
+```
+$ helm search repo coditeu/ --devel
+NAME                                    CHART VERSION   APP VERSION     DESCRIPTION
+coditeu/azure-pipeline-environment      0.1.0-alpha     0.1.0           A Helm chart for creating required resources to...
 ```
 
-4. Re-index the Helm repo to add our new version
-```shell
-$ helm repo index docs --url https://coditeu.github.io/charts
-```
+## Releases
+
+You can find the latest releases [here](https://github.com/coditeu/charts/releases).
+
+## Contributing
+
+You can find contributing guide [here](./CONTRIBUTING.md)
 
 ## License Information
 This is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the web application. But you always need to state that Codit is the original author of this web application.
