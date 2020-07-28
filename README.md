@@ -4,15 +4,14 @@ Helm chart repo of common apps that we use:
 - **Azure Pipeline Environment** - A Helm chart for creating required resources to use Azure Pipelines' Environment
 
 ## Getting Started
-### Browsing our Helm chart repo
+### Adding our Helm chart repo
 
-**Adding our Helm chart repo:**
 ```console
 $ helm repo add coditeu https://coditeu.github.io/charts
 "coditeu" has been added to your repositories
 ```
 
-**Browse all our Helm charts:**
+### Browse all our Helm charts
 ```
 $ helm search repo coditeu/ --devel
 NAME                                    CHART VERSION   APP VERSION     DESCRIPTION
