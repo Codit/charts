@@ -17,7 +17,7 @@ $ helm repo add coditeu https://coditeu.github.io/charts
 ```
 $ helm search repo coditeu/ --devel
 NAME                                    CHART VERSION   APP VERSION     DESCRIPTION
-coditeu/azure-pipeline-environment      0.1.0-alpha     0.1.0           A Helm chart for creating required resources to...
+coditeu/azure-pipeline-environment      0.1.0           0.1.0           A Helm chart for creating required resources to...
 ```
 
 ## Releases
