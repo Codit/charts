@@ -1,9 +1,9 @@
 trigger:
-- master
+- main
 pr:
  branches:
    include:
-     - master
+     - main
  paths:
    include:
      - azure-pipeline-environment/*
