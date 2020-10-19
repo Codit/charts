@@ -12,11 +12,11 @@ serviceAccount:
 bindings:
   cluster:
     name: "az-devops-admin"
-    create: true
   role:
     name: "az-devops-admin"
 roles:
   cluster:
     name: "azure:devops:cluster-admin"
+    create: true
 
  
