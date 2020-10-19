@@ -16,7 +16,7 @@ bindings:
     name: "az-devops-admin"
 roles:
   cluster:
-    name: "azure:devops:cluster-admin"
+    name: "azure-devops-cluster-admin"
     create: true
 
  

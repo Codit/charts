@@ -41,7 +41,7 @@ their default values.
 |:-----------------------------|:------------------------------------|:------------------------------|
 | `serviceAccount.name`        | Name of the service account to use  | `az-devops`                   |
 | `serviceAccount.annotations` | Annotations for the service account | None                          |
-| `roles.cluster.name`         | Name of the cluster role to create  |  `azure:devops:cluster-admin` |
+| `roles.cluster.name`         | Name of the cluster role to create  |  `azure-devops-cluster-admin` |
 | `roles.cluster.create`       | Indication whether or not creation of the cluster role should be created |  `true` |
 | `bindings.cluster.name`      | Name of the cluster binding         | `az-devops-admin`             |
 | `bindings.role.name`         | Name of the role binding            | `az-devops-admin`             |

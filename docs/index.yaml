@@ -2,7 +2,30 @@ apiVersion: v1
 entries:
   azure-pipeline-environment:
   - apiVersion: v2
-    created: "2020-10-19T16:14:26.9758586+02:00"
+    created: "2020-10-19T16:16:54.7619719+02:00"
+    description: A Helm chart for creating required resources to use Azure Pipelines'
+      Environment
+    digest: 1d23bfbcf6af008e27f579a0fb40913a2320952e7508f69f655da083fa04356f
+    icon: https://raw.githubusercontent.com/CoditEU/charts/master/media/logo.png
+    keywords:
+    - Azure DevOps
+    - Azure Pipelines
+    - Kubernetes
+    - DevOps
+    - Azure
+    maintainers:
+    - email: tom.kerkhove@codit.eu
+      name: Tom Kerkhove
+      url: http://github.com/tomkerkhove
+    name: azure-pipeline-environment
+    sources:
+    - https://github.com/CoditEU/charts
+    type: application
+    urls:
+    - https://coditeu.github.io/charts/azure-pipeline-environment-1.0.0.tgz
+    version: 1.0.0
+  - apiVersion: v2
+    created: "2020-10-19T16:16:54.7619719+02:00"
     description: A Helm chart for creating required resources to use Azure Pipelines'
       Environment
     digest: 8c594989ebe38e183e7dd09d7917922d1d2722418e57b301e63ecd6371ccd9ce
@@ -25,7 +48,7 @@ entries:
     - https://coditeu.github.io/charts/azure-pipeline-environment-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2020-10-19T16:14:26.9758586+02:00"
+    created: "2020-10-19T16:16:54.7609615+02:00"
     description: A Helm chart for creating required resources to use Azure Pipelines'
       Environment
     digest: da88e919813247c1fbe54d2bc37c3dd962e8a454eade48c40b9e29535a83b92c
@@ -48,7 +71,7 @@ entries:
     - https://coditeu.github.io/charts/azure-pipeline-environment-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2020-10-19T16:14:26.9758586+02:00"
+    created: "2020-10-19T16:16:54.7609615+02:00"
     description: A Helm chart for creating required resources to use Azure Pipelines'
       Environment
     digest: 202b66d12494d8a02de5a1ad04b854ffaba73d4dc2fbb4fcadbd80721ad806f4
@@ -70,4 +93,4 @@ entries:
     urls:
     - https://coditeu.github.io/charts/azure-pipeline-environment-0.1.0-alpha.tgz
     version: 0.1.0-alpha
-generated: "2020-10-19T16:14:26.9748262+02:00"
+generated: "2020-10-19T16:16:54.7599625+02:00"
