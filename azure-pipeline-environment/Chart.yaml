@@ -20,7 +20,7 @@ type: application
 version: 1.0.0
 
 # A URL to an SVG or PNG image to be used as an icon
-icon: https://raw.githubusercontent.com/CoditEU/charts/master/media/logo.png
+icon: https://raw.githubusercontent.com/CoditEU/charts/main/media/logo.png
 
 # A list of URLs to source code for this project
 sources:
