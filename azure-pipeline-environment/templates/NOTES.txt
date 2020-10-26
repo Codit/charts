@@ -1,1 +1,17 @@
-Service account {{ include "azure-pipeline-environment.serviceAccountName" . }} was created
+Thank you for installing {{ .Chart.Name }}.
+
+Your release is named {{ .Release.Name }}.
+
+{{- if .Values.roles.cluster.create }}
+Following cluster-wide resources were created:
+- Cluster role {{ include "azure-pipeline-environment.clusterRole" . }}
+- Cluster role binding {{ include "azure-pipeline-environment.clusterRoleBinding" . }}
+{{- end }}
+
+Following resources were created in namespace {{ .Release.Namespace }}:
+- Service account {{ include "azure-pipeline-environment.serviceAccountName" . }}
+- Role binding {{ include "azure-pipeline-environment.roleBinding" . }} for the service account to cluster role {{ include "azure-pipeline-environment.clusterRole" . }}
+
+Looking for the Kubernetes secret linked to your service account? Run this command!
+
+> kubectl get serviceAccounts {{ include "azure-pipeline-environment.serviceAccountName" . }} -o=jsonpath="{.secrets[*].name}"
