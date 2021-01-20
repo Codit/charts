@@ -21,7 +21,7 @@ jobs:
       uses: Azure/setup-helm@v1
 
     - name: Lint Helm chart
-      run: helm lint ./charts/${{ env.CHART_NAME }}
+      run: helm lint ./${{ env.CHART_NAME }}
 
   deploy-helm-3-x:
     name: Deploy Chart to Kind Cluster
@@ -52,10 +52,10 @@ jobs:
       run: kubectl config set-context --current --namespace=${{ env.KUBERNETES_NAMESPACE }}
 
     - name: Template Helm chart
-      run: helm template ${{ env.CHART_NAME }} ./charts/${{ env.CHART_NAME }}/
+      run: helm template ${{ env.CHART_NAME }} ./${{ env.CHART_NAME }}/
 
     - name: Install Helm chart
-      run: helm install ${{ env.CHART_NAME }} ./charts/${{ env.CHART_NAME }}/ --wait
+      run: helm install ${{ env.CHART_NAME }} ./${{ env.CHART_NAME }}/ --wait
 
     - name: Show installed Helm charts
       run: helm ls
