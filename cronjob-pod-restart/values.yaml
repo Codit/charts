@@ -1,0 +1,22 @@
+# Default values for azure-pipeline-environment.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+serviceAccount:
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: "operations-pod-restart"
+
+bindings:
+  role:
+    name: "get-pods-role-binding"
+roles:
+  cluster:
+    name: "get-pods-role"
+
+cronjob:
+  name: "cronjob-delete-pods"
+  schedule: "0 0 * * *"
+  podLabel: ""

@@ -1,0 +1,20 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: {{ .Values.cronjob.name }}
+spec:
+  schedule: {{ .Values.cronjob.schedule | quote }}
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: {{ include "cronjob-pod-restart.serviceAccountName" . }}
+          containers:
+          - name: kubectl-container
+            image: bitnami/kubectl:1.17.13
+            imagePullPolicy: IfNotPresent
+            command:
+            - /bin/sh
+            - -c
+            - kubectl delete pods -l {{ .Values.cronjob.podLabel }} --namespace={{ .Release.Namespace }}
+          restartPolicy: OnFailure
