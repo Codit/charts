@@ -6,6 +6,7 @@ A cronjob that executes a scheduled restart of pods by label.
 
 ```console
 helm repo add coditeu https://coditeu.github.io/charts
+helm repo update
 helm install coditeu/cronjob-pod-restart
 ```
 
