@@ -2,9 +2,8 @@ apiVersion: v1
 entries:
   azure-pipeline-environment:
   - apiVersion: v2
-    created: "2020-10-19T16:16:54.7619719+02:00"
-    description: A Helm chart for creating required resources to use Azure Pipelines'
-      Environment
+    created: "2021-01-23T13:09:53.1828117+01:00"
+    description: A Helm chart for creating required resources to use Azure Pipelines' Environment
     digest: 1d23bfbcf6af008e27f579a0fb40913a2320952e7508f69f655da083fa04356f
     icon: https://raw.githubusercontent.com/CoditEU/charts/master/media/logo.png
     keywords:
@@ -25,9 +24,8 @@ entries:
     - https://coditeu.github.io/charts/azure-pipeline-environment-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2020-10-19T16:16:54.7619719+02:00"
-    description: A Helm chart for creating required resources to use Azure Pipelines'
-      Environment
+    created: "2021-01-23T13:09:53.1823571+01:00"
+    description: A Helm chart for creating required resources to use Azure Pipelines' Environment
     digest: 8c594989ebe38e183e7dd09d7917922d1d2722418e57b301e63ecd6371ccd9ce
     icon: https://raw.githubusercontent.com/CoditEU/charts/master/media/logo.png
     keywords:
@@ -48,9 +46,8 @@ entries:
     - https://coditeu.github.io/charts/azure-pipeline-environment-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2020-10-19T16:16:54.7609615+02:00"
-    description: A Helm chart for creating required resources to use Azure Pipelines'
-      Environment
+    created: "2021-01-23T13:09:53.1813825+01:00"
+    description: A Helm chart for creating required resources to use Azure Pipelines' Environment
     digest: da88e919813247c1fbe54d2bc37c3dd962e8a454eade48c40b9e29535a83b92c
     icon: https://raw.githubusercontent.com/CoditEU/charts/master/media/logo.png
     keywords:
@@ -71,9 +68,8 @@ entries:
     - https://coditeu.github.io/charts/azure-pipeline-environment-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2020-10-19T16:16:54.7609615+02:00"
-    description: A Helm chart for creating required resources to use Azure Pipelines'
-      Environment
+    created: "2021-01-23T13:09:53.1803217+01:00"
+    description: A Helm chart for creating required resources to use Azure Pipelines' Environment
     digest: 202b66d12494d8a02de5a1ad04b854ffaba73d4dc2fbb4fcadbd80721ad806f4
     icon: https://raw.githubusercontent.com/CoditEU/charts/master/media/logo.png
     keywords:
@@ -93,4 +89,25 @@ entries:
     urls:
     - https://coditeu.github.io/charts/azure-pipeline-environment-0.1.0-alpha.tgz
     version: 0.1.0-alpha
-generated: "2020-10-19T16:16:54.7599625+02:00"
+  schedule-pod-restart:
+  - apiVersion: v2
+    created: "2021-01-23T13:09:53.1831109+01:00"
+    description: A Helm chart for automatically restarting pods with labels based on a cron schedule.
+    digest: 60e8a5306e9f0fdb162b3f6e0c52e9d6abf13e837d5035ef9ae7c36e5aad98b2
+    icon: https://raw.githubusercontent.com/CoditEU/charts/main/media/logo.png
+    keywords:
+    - Kubernetes
+    - Operations
+    - Cronjob
+    maintainers:
+    - email: falco.lannoo@codit.eu
+      name: Falco Lannoo
+      url: http://github.com/flannoo
+    name: schedule-pod-restart
+    sources:
+    - https://github.com/CoditEU/charts
+    type: application
+    urls:
+    - https://coditeu.github.io/charts/schedule-pod-restart-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-01-23T13:09:53.1776856+01:00"
