@@ -13,4 +13,4 @@ Looking for the Kubernetes cronjob? Run this command!
 
 The cronjob will execute the below command in the cron interval {{ .Values.cronjob.schedule | quote }}
 
-> kubectl delete pods -l {{ .Values.cronjob.podLabel }} --namespace={{ .Release.Namespace }}
+> kubectl delete pods -l {{ .Values.cronjob.podLabels }} --namespace={{ .Release.Namespace }}

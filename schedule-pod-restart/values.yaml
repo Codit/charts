@@ -17,4 +17,4 @@ role:
 
 cronjob:
   schedule: "0 0 * * *"
-  podLabel: ""
+  podLabels: ""
