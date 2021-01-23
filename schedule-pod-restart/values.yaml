@@ -11,12 +11,10 @@ serviceAccount:
 
 bindings:
   role:
-    name: "get-pods-role-binding"
-roles:
-  cluster:
-    name: "get-pods-role"
+    name: "manage-pods-role-binding"
+role:
+  name: "manage-pods-role"
 
 cronjob:
-  name: "cronjob-delete-pods"
   schedule: "0 0 * * *"
   podLabel: ""

@@ -1,17 +1,17 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: {{ .Values.cronjob.name }}
+  name: {{ include "schedule-pod-restart.name" . }}
 spec:
   schedule: {{ .Values.cronjob.schedule | quote }}
   jobTemplate:
     spec:
       template:
         spec:
-          serviceAccountName: {{ include "cronjob-pod-restart.serviceAccountName" . }}
+          serviceAccountName: {{ include "schedule-pod-restart.serviceAccountName" . }}
           containers:
           - name: kubectl-container
-            image: bitnami/kubectl:1.17.13
+            image: bitnami/kubectl:{{ include "schedule-pod-restart.bitnamiContainerImageTag" . }}
             imagePullPolicy: IfNotPresent
             command:
             - /bin/sh
