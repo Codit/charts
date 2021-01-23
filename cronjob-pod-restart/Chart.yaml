@@ -1,6 +1,6 @@
 apiVersion: v2
 name: cronjob-pod-restart
-description: A Helm chart for creating a cronjob that performs a restart of selected pods
+description: A Helm chart for automatically restarting pods with labels based on a cron schedule.
 
 # A chart can be either an 'application' or a 'library' chart.
 #
