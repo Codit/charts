@@ -33,4 +33,5 @@ maintainers:
 # Collection of keywords related to the Helm chart
 keywords:
   - Kubernetes
+  - Operations
   - Cronjob
