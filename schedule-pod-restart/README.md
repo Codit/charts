@@ -43,6 +43,6 @@ their default values.
 | `serviceAccount.annotations` | Annotations for the service account                                      | None                              |
 | `role.name`                  | Name of the role to create                                               | `manage-pods-role`                |
 | `bindings.role.name`         | Name of the role binding                                                 | `manage-pods-role-binding`        |
-| `cronjob.schedule`           | A cronjob expression that defines the schedule when the job should run   | `0 0 * * *`                       |
+| `cronjob.schedule`           | A cronjob expression that defines the schedule when the job should run. Learn more about the format [in the official documentation](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#cron-schedule-syntax).   | `0 0 * * *`                       |
 | `cronjob.podLabels`           | One or more labels on the pods that need to be restarted. Use format `key1=value1,key2=value2`      | None   |
 | `bitnamiContainerImageTag`   | bitnami/kubectl container image tag                                      | Version of the Kubernetes cluster where the chart will be deployed          |
