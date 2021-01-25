@@ -7,7 +7,7 @@ Automatically restarting pods with labels based on a cron schedule.
 ```console
 helm repo add coditeu https://coditeu.github.io/charts
 helm repo update
-helm install coditeu/cronjob-pod-restart
+helm install schedule-pod-restart coditeu/schedule-pod-restart
 ```
 
 ## Introduction
