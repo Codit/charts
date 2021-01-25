@@ -17,7 +17,7 @@ helm install coditeu/cronjob-pod-restart
 To install the chart with the release name `schedule-pod-restart`:
 
 ```console
-$ helm install schedule-pod-restart coditeu/schedule-pod-restart --set "cronjob.schedule=0 1 * * *" --set cronjob.podLabels=app=example
+$ helm install schedule-pod-restart coditeu/schedule-pod-restart --set cronjob.schedule="0 1 * * *" --set cronjob.podLabels="app=example"
 ```
 
 ## Uninstalling the Chart
@@ -45,4 +45,4 @@ their default values.
 | `bindings.role.name`         | Name of the role binding                                                 | `manage-pods-role-binding`        |
 | `cronjob.schedule`           | A cronjob expression that defines the schedule when the job should run. Learn more about the format [in the official documentation](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/#cron-schedule-syntax).   | `0 0 * * *`                       |
 | `cronjob.podLabels`          | One or more labels on the pods that need to be restarted. Use format `key1=value1,key2=value2`      | None   |
-| `image.tag`                  | Tag of container image that contains `kubectl`                           | Version of the Kubernetes cluster where the chart will be deployed          |
+| `image.tagname`              | Tag of container image that contains `kubectl`                           | Version of the Kubernetes cluster where the chart will be deployed          |

@@ -2,11 +2,14 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+# Override the cronjob name
+nameOverride: ""
+
 serviceAccount:
   # Annotations to add to the service account
   annotations: {}
   # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
+  # If not set, a name is generated using the fullname template
   name: "operations-pod-restart"
 
 bindings:
@@ -18,3 +21,6 @@ role:
 cronjob:
   schedule: "0 0 * * *"
   podLabels: ""
+
+image:
+  tagname: ""
