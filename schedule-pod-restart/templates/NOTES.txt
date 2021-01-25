@@ -1,0 +1,16 @@
+Thank you for installing {{ .Chart.Name }}.
+
+Your release is named {{ .Release.Name }}.
+
+Following resources were created in namespace {{ .Release.Namespace }}:
+- Service account {{ .Values.serviceAccount.name }}
+- Role binding {{ .Values.bindings.role.name }} for the service account to role {{ .Values.role.name }}
+- Cronjob {{ include "schedule-pod-restart.name" . }}
+
+Looking for the Kubernetes cronjob? Run this command!
+
+> kubectl get cronjob {{ include "schedule-pod-restart.name" . }} --namespace={{ .Release.Namespace }}
+
+The cronjob will execute the below command in the cron interval {{ .Values.cronjob.schedule | quote }}
+
+> kubectl delete pods -l {{ .Values.cronjob.podLabels }} --namespace={{ .Release.Namespace }}

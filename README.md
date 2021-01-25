@@ -2,6 +2,7 @@
 Helm chart repo of common apps that we use:
 
 - **Azure Pipeline Environment** - A Helm chart for creating required resources to use Azure Pipelines' Environment
+- **Schedule Pod Restart** - A Helm chart for automatically restarting pods with labels based on a cron schedule.
 
 ![Codit logo](./media/logo.png)
 
