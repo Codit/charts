@@ -17,7 +17,7 @@ helm install coditeu/cronjob-pod-restart
 To install the chart with the release name `schedule-pod-restart`:
 
 ```console
-$ helm install schedule-pod-restart coditeu/schedule-pod-restart
+$ helm install schedule-pod-restart coditeu/schedule-pod-restart --set "cronjob.schedule=0 1 * * *" --set cronjob.podLabels=app=example
 ```
 
 ## Uninstalling the Chart
