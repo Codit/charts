@@ -11,7 +11,7 @@ spec:
           serviceAccountName: {{ include "schedule-pod-restart.serviceAccountName" . }}
           containers:
           - name: kubectl-container
-            image: bitnami/kubectl:{{ include "schedule-pod-restart.bitnamiContainerImageTag" . }}
+            image: bitnami/kubectl:{{ include "schedule-pod-restart.image.tag" . }}
             imagePullPolicy: IfNotPresent
             command:
             - /bin/sh

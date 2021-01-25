@@ -78,9 +78,9 @@ Create the name of the role binding to use
 {{/*
 Defines the target kubernetes version which is used for the bitnami/kubectl container image tag
 */}}
-{{- define "schedule-pod-restart.bitnamiContainerImageTag" -}}
-{{- if .Values.bitnamiContainerImageTag }}
-{{- .Values.bitnamiContainerImageTag }}
+{{- define "schedule-pod-restart.image.tag" -}}
+{{- if .Values.image.tag }}
+{{- .Values.image.tag }}
 {{- else }}
 {{- .Capabilities.KubeVersion.Version | replace "v" "" }}
 {{- end }}
