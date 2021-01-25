@@ -1,4 +1,4 @@
-# Cronjob Pod Restart
+# Schedule Pod Restart
 
 Automatically restarting pods with labels based on a cron schedule.
 
